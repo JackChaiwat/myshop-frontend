@@ -60,6 +60,7 @@ export function useProducts(params?: {
   min_price?: number
   max_price?: number
   featured?: boolean
+  q?: string    
 }) {
   return useQuery<PaginatedProducts>({
     queryKey: ['products', params],
